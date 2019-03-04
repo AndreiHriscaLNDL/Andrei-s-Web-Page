@@ -1,0 +1,138 @@
+
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: #FEA47F;
+}
+
+/* Main content */
+.main {
+  margin-top: 8%; /* Add a top margin to avoid content overlay */
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logoimg {
+  align-items: center;
+  height: 400px;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+.brand {
+
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+
+}
+.brand:before {
+
+  background-size: 100% 100%;
+  content: "{ Andrei }";
+  line-height: 205px;
+  color: black;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: absolute;
+
+  z-index: 99999 !important;
+}
+
+.logo{
+  animation: 5s linear infinite;
+  animation-name: rotate-0;
+  animation-delay: 0s;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+
+}
+
+
+svg path{
+  positon:absolute;
+  fill:none;
+  stroke-width:2;
+  top:0;
+  left:0;
+  /*mix-blend-mode: multiply;*/
+  transform-origin: 50% 50%;
+  transform: rotate(0deg) ;
+  animation: 4s linear infinite;
+}
+
+.logo svg path:nth-child(1) {
+  opacity: 1;
+  animation-name: rotate-1;
+  animation-delay: .5s;
+}
+.logo svg path:nth-child(2) {
+  opacity: .5;
+  animation-name: rotate-2;
+  animation-delay: .6s;
+}
+.logo svg path:nth-child(3) {
+  opacity: .8;
+  animation-name: rotate-3;
+  animation-delay: .7s;
+}
+
+
+@keyframes scale-1 {
+  0%{
+    transform: scale(1);
+  }50% {
+    transform: scale(.9);
+  }100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate-0 {
+  from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-1 {
+  from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-2 {
+  from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes rotate-3 {
+  from { transform: rotate(0deg); }
+    to { transform: rotate(0deg); }
+}

@@ -1,0 +1,135 @@
+form {
+		box-sizing: border-box;
+	}
+
+/* -- Centrar parrafo --*/
+div{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+	body{
+		margin: 0;
+	}
+
+	.formulario{
+		width: 500px;
+		max-width: 100%;
+		margin: auto;
+		margin-top: 30px;
+		padding: 20px;
+
+		position: relative;
+		font-family: 'Lato', sans-serif;
+	}
+	.formulariotitulo{
+		text-align: center;
+		margin-top: 0;
+		color: rgba(0,0,0,0.7);
+	}
+	.formularioinput, .formulariolabel, .formulariosubmit{
+		display: block;
+		width: 100%;
+		font-size: 1.3em;
+	}
+
+	.fomulariosubmit{
+		display: block;
+		width: 100%
+		font-size: 1.3em;
+	}
+	.formularioinput{
+		padding: 20px;
+		background: rgba(0,0,0,0.1);
+		border: 1px solid rgba(0,0,0,0.3);
+		margin-bottom: 40px;
+	}
+	.formulario:before ~ .formulario:after{
+		content: '';
+		height: 2px;
+		width: 0;
+		bottom: 1px;
+		position: absolute;
+		background: #5264AE;
+		transition: 0.2s ease all;
+		-moz-transition: 0.2s ease all;
+		-webkit-transition: 0.2 ease all;
+	}
+	.formularioinput:focus{
+		outline: 1px solid rgba(0,0,0,0.7);
+		content: '';
+
+	}
+	.formularioinput:focus + .formulariolabel{
+		margin-top: -130px;
+
+	}
+	.formulariosubmit:hover{
+		background-color: green;
+		transition: all 1s;
+	}
+	.formulariolabel{
+		padding-left: 15px;
+		position: absolute;
+		margin-top: -85px;
+		z-index: -20;
+		color: rgba(0,0,0,0.5);
+		transition: all 0.4s;
+	}
+
+	.creditos{
+		font-size: 11px;
+		font-family: 'Lato', sans-serif;
+		text-align: right;
+		margin-left: 0;
+		color: rgba(0,0,0,0.8);
+
+	}
+	.formulariosubmit{
+		background: black;
+		color: white;
+		padding: 10px 20px;
+		cursor: pointer;
+		border: none;
+
+	}
+	.fijar{
+		margin-top: -135px;
+	}
+
+/* NAVBAR ------------------------------------------------*/
+
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: #FEA47F;
+}
+
+/* Main content */
+.main {
+  margin-top: 8%; /* Add a top margin to avoid content overlay */
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}

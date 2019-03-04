@@ -1,0 +1,67 @@
+html, body {
+  margin: 0; padding: 0;
+}
+.hero-bkg-animated {
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+.container1 {
+  width: 100px;
+  text-align: center;
+  float: center;
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* -------------------------------------------------------------------------*/
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: #FEA47F;
+}
+
+/* Main content */
+.main {
+  margin-top: 8%; /* Add a top margin to avoid content overlay */
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
